@@ -385,6 +385,23 @@ body{
     right:15px;
 }
 
+.custom-arrow{
+    width:55px;
+    height:55px;
+    border:1px solid #ccc;
+    position:absolute;
+    right:40px;
+    background:rgba(255,255,255,0.2);
+    opacity:1;
+   
+}
+.hero-slide::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,0.05);
+}
+
 }
 
 @media (max-width:768px){
@@ -395,7 +412,7 @@ body{
 }
 
 .hero-slide{
-    height:550px;
+    height:50vh
 }
 
 }
@@ -1577,6 +1594,18 @@ body{
     color:#ddd;
     padding:80px 0 30px;
 }
+.cta-box{
+    background:linear-gradient(135deg,#16a34a,#18b87c);
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:10px 10px;
+    position:relative;
+    overflow:hidden;
+}
 
 /* Headings */
 .footer h5{
@@ -1693,11 +1722,12 @@ body{
 /* Responsive */
 @media (max-width:991px){
     .footer{
-        text-align:center;
+        text-align:start;
     }
 
     .footer-social{
-        justify-content:center;
+        justify-content:start;
+       
     }
 
     .newsletter-input{
@@ -1725,6 +1755,78 @@ body{
         justify-content: center;
     }
 }
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+    .footer {
+        padding: 50px 15px 20px;
+        text-align: start;
+    }
+
+    .footer h5 {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        text-align: start;
+    }
+
+    /* Stack columns nicely */
+    .footer .col-md-3,
+    .footer .col-md-4,
+    .footer .col-md-2,
+    .footer .col-lg-3 {
+        margin-bottom: 25px;
+        text-align: start;
+    }
+
+    /* Logo center */
+    .footer-logo {
+        text-align: center;
+    }
+
+    /* Phone size adjust */
+    .footer-phone {
+        font-size: 18px;
+    }
+
+    /* Social icons center */
+    .footer-social {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    /* Newsletter input full width */
+    .newsletter-input {
+        max-width: 100%;
+    }
+
+    .newsletter-input input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .newsletter-input button {
+        padding: 0 14px;
+        font-size: 14px;
+    }
+
+    /* Links spacing */
+    .footer a {
+        margin-bottom: 8px;
+    }
+
+    /* Divider spacing */
+    .footer-divider {
+        margin: 30px 0 15px;
+    }
+
+    /* Bottom text */
+    .footer-bottom {
+        font-size: 13px;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+}
+
 .about-banner {
     position: relative;
     background: url('images/aboutban.jpg') center/cover no-repeat;
@@ -2766,4 +2868,15 @@ body{
     0% { transform: translateX(-100%); }
     50% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
+}
+.footer-links
+{
+    color: white;
+}
+@media(max-width:550px)
+{
+    .footer-links
+    {
+        text-align: start;
+    }
 }
