@@ -315,14 +315,14 @@ body{
 .hero-content h1{
     font-size:60px;
     font-weight:700;
-    color:#0f1e3a;
+    color:white;
     line-height:1.2;
 }
 
 .hero-content p{
     margin-top:20px;
     font-size:18px;
-    color:#4a5568;
+    color:white;
 }
 
 /* Buttons */
@@ -346,9 +346,10 @@ body{
 }
 
 .btn-outline-custom{
-    border:2px solid #222;
+    border:2px solid white;
     padding:14px 35px;
     background:transparent;
+    color: white;
 }
 
 .btn-outline-custom:hover{
@@ -366,6 +367,18 @@ body{
     right:40px;
     background:rgba(255,255,255,0.8);
     opacity:1;
+}
+@media(max-width:550px)
+{
+    .custom-arrow{
+    width:35px;
+    height:25px;
+    border:1px solid #ccc;
+    position:absolute;
+    right:40px;
+    background:rgba(255,255,255,0.8);
+    opacity:1;
+}
 }
 
 .carousel-control-prev.custom-arrow{
@@ -414,8 +427,8 @@ body{
 }
 
 .custom-arrow{
-    width:55px;
-    height:55px;
+    width:35px;
+    height:35px;
     border:1px solid #ccc;
     position:absolute;
     right:40px;
@@ -423,6 +436,7 @@ body{
     opacity:1;
    
 }
+
 .hero-slide::before{
     content:"";
     position:absolute;
